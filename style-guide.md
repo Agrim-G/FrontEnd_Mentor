@@ -11,25 +11,24 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Orange: hsl(26, 100%, 55%)
-- Pale orange: hsl(25, 100%, 94%)
+- Strong cyan: hsl(172, 67%, 45%)
 
 ### Neutral
 
-- Very dark blue: hsl(220, 13%, 13%)
-- Dark grayish blue: hsl(219, 9%, 45%)
-- Grayish blue: hsl(220, 14%, 75%)
-- Light grayish blue: hsl(223, 64%, 98%)
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
 - White: hsl(0, 0%, 100%)
-- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 16px
+- Font size (form inputs): 24px
 
 ### Font
 
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700

@@ -1,108 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  <div class="navigationBar">
-    <div class="left">
-    <div class="logo">
-      <img src="images/logo.svg" alt="">
-    </div>
-    <div class="menu">
-      <a href="#">Collections</a>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-    </div>
-    <div class="right">
-      <div class="dropdownbtn">
-      <button>
-      <img src="images/icon-cart.svg" alt="" width="30px">
-      </button>
-      <div class="dropdown">
-        <span class="cart">
-          Cart
-        </span>
-        <span class="cartis">
-          Your cart is empty
-        </span>
+
+  <div class="work-title">
+    <h1>SPLI<br>TTER</h1>
+  </div>
+
+
+  <div class="wrapper">
+
+    <div class="options">
+
+      <div class="options__bill">
+        <p class="options__bill-title title">Bill <span class="title-span bill-span"></span></p>
+        <input type="number" class="options__bill-input input" placeholder="0" max="10000">
+      </div>
+
+      <div class="options__tip">
+        <p class="options__tip-title title">Select Tip %</p>
+        <div class="options__tip-div">
+          <button value="0.05" class="options__tip-div-value">5%</button>
+          <button value="0.1" class="options__tip-div-value">10%</button>
+          <button value="0.15" class="options__tip-div-value">15%</button>
+          <button value="0.25" class="options__tip-div-value">25%</button>
+          <button value="0.5" class="options__tip-div-value">50%</button>
+          <input type="number" class="options__tip-div-input" placeholder="Custom" max="100">
         </div>
       </div>
-      <img src="images/image-avatar.png" alt="" width="40px">
-    </div>
-  </div>
-  <hr>
-  <div class="main">
-    <div class="left-main">
-      <img src="images/image-product-1.jpg" alt="" class="mainimg" width="400px">
-      <div class="smallimg">
-        <img src="images/image-product-1-thumbnail.jpg" alt="" width="80px">
-        <img src="images/image-product-2-thumbnail.jpg" alt="" width="80px">
-        <img src="images/image-product-3-thumbnail.jpg" alt="" width="80px">
-        <img src="images/image-product-4-thumbnail.jpg" alt="" width="80px">
+
+      <div class="options__people">
+        <p class="options__people-title title">Number of People <span class="title-span people-span"></span></p>
+        <input type="number" class="options__people-input input" placeholder="0" max="100" >
       </div>
+
     </div>
-    <div class="right-main">
-      <p style="color: orange;">Sneaker Company</p>
-      <h1>Fall Limited Edition Sneakers</h1>
-      <p style="color: lightgray;">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-        durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+    <div class="amount">
+      <div class="amount__tip">
+        <p class="amount__tip-title">Tip Amount <br>
+          <span>/ person</span>
         </p>
-        <div class="price">
-          <span class="tag">$125.00</span>
-          <span class="discount">50%</spna>
-        </div>
-        <p style="color: grey;">$250.00</p>
-    <div class="final">
-      <div class="quantity">
-        <p style="color: orange;">-</p>
-        <p>0</p>
-        <p style="color: orange;">+</p>
+        <p class="amount__tip-value">$0.00</p>
       </div>
-      <span class="cart">Add to cart</span>
+      <div class="amount__total">
+        <p class="amount__total-title">Total <br>
+          <span>/ person</span>
+        </p>
+        <p class="amount__total-value">$0.00</p>
+      </div>
+
+      <button class="amount__reset-btn button" disabled>Reset</button>
     </div>
   </div>
-</div>
-  <!-- <div class="container">
-<nav class="navbar">
-  <a href="#">Collections</a>
-  <a href="#">Men</a>
-  <a href="#">Women</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-</nav>
-<div class="left">
 
-</div>
-<div class="right">
-  <span class="title">Sneaker Company</span>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
 
-  <h3>Fall Limited Edition Sneakers</h3>
 
-  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-  </p>
-  <span class="price">$125.00</span>
-  <span class="discount">50%</span>
-  <span class="original_price">$250.00</span>
-  <span class="quantity">
-  0</span>
-  <span class="cart">Add to cart</span>
-</div>
-</div> -->
+  <script src="script.js"></script>
 </body>
+
 </html>
